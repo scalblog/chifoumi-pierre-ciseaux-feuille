@@ -4,26 +4,8 @@ var choixUtilisateur ;
 var choixOrdi ;
 var result;
 
-/* userChoice = (window.prompt("Choisissez entre pierre, feuille et ciseaux")).toLowerCase() ; 
-computerChoice = Math.random();
-
-if (computerChoice <= 0.33) {
-	console.log("pierre")
-}
-else if (computerChoice >= 0.66) {
-	console.log("ciseaux")
-}
-else {console.log("feuille")
-}
-*/
 choixUtilisateur = prompt("Choisissez-vous pierre, feuille, ou ciseaux ?").toLowerCase();
 choixOrdi = Math.random();
-
-/* autre possibilite pour le toLowerCase :
-
-choixUtilisateur = prompt("Choisissez-vous pierre, feuille, ou ciseaux ?");
-choixUtilisateur = choixUtilisateur.toLowerCase().trim();
-*/
 
 console.log("choixUtilisateur = " + choixUtilisateur);
 
@@ -41,41 +23,6 @@ else {
 
 console.log("Ordinateur a choisi : " + choixOrdi);
 
-
-/* mal répartie ma confrontation choixUtilisateur / choixOrdi :
-
-if (choixUtilisateur == "pierre") {
-    if (choixOrdi == "ciseaux") {
-        result = "Vous avez gagné";
-    } 
-    else {
-        result = "L'ordi gagne";
-    }
-    }
-
-else if (choixUtilisateur == "feuille") {
-	if (choixOrdi == "pierre") {
-        result = "Vous avez gagné";
-    } 
-    else {
-        result = "L'ordi gagne";
-    }
-    }
-
-else if (choixUtilisateur == "ciseaux") {
-    if (choixOrdi == "feuille") {
-        result = "Vous avez gagné";
-    } 
-    else {
-        result = "L'ordi gagne";
-    }
-}   
-
-else {
-	result = "Egalité !"
-}
-
-*/
 
 if (choixUtilisateur == choixOrdi) {
     result = "Egalité ! rejouez...";
