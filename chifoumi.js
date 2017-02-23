@@ -1,4 +1,10 @@
-"use strict";
+"use strict";  // pour avoir un code JavaScript proprement exécuter.
+
+/* ici 
+Dans cette méthode on envisage dans IF le cas où l'ordinateur et le joueur font égalité, puis dans les IF ELSE 
+on envisage les cas où le Joueur peut gagner et enfin le ELSE désigne ce qui reste : à savoir que les autres cas de figure 
+qui font que l ordinateur gagne.
+*/
 
 var choixUtilisateur ;
 var choixOrdi ;
@@ -48,6 +54,7 @@ else {
 /*  avec Swicth... case... cest possible aussi
 attention : Default est censé stocker les cas pour les erreurs : ici quand l utilisateur 
 n a pas saisi pierre feuille ciseaux
+
 'use strict';
 
 // déclaration des variables
